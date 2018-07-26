@@ -1,0 +1,15 @@
+{
+  "name": "Hamza_portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Muhammad Hamza Asif. MEAN stack developer",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w SCSS/ -o dist/css/ --recursive"
+  },
+  "keywords": [],
+  "author": "Muhammad Hamza Asif",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}

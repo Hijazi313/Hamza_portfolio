@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>About Me</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item current">
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="work.html" class="nav-link">
+                        My Work
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        How To Reach Me
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="about">
+        <h1 class="lg-heading">
+            About
+            <span class="text-secondry">Me</span>
+        </h1>
+        <h2 class="sm-heading">
+            Let Me Tell You A Few Things
+        </h2>
+        <div class="about-info">
+            <img src="img/hamza-asif-portrait.jpeg" alt="Muhammad Hamza Asif" class="bio-image">
+
+            <div class="bio">
+                <h3 class="text-secondry">BIO</h3>
+                <p>
+                    Born and Raised in Pakistan. I am a Full-stack JavaScript/Nodejs Developer. Cureently i am a student of BS Computer Sciences
+                    but i have strong passion for Programming and learning new technologies. Working as a best MEAN Stack
+                    developer is my goal
+                </p>
+            </div>
+            <div class="jobs job-1">
+                <h3>Web Developer</h3>
+                <h6>Full-stack developer</h6>
+                <p>
+                    Development of websites from scratch, knowledge and Usage of technologies like HTML/CSS, BootStrap, Materialize, JavaScript,
+                    NodeJS, TypeScript, AngularJS, ElectronJS, MngoDB, MySQL, RESTFUll API's.
+                </p>
+            </div>
+
+            <div class="jobs job-2">
+                <h3>SEO Expert</h3>
+                <h6>Optimizezation of websites </h6>
+                <p>
+                    Optimization of Websites using latest technologies and according to new standards. On page, Off page SEO and Spying on Competatior
+                </p>
+            </div>
+
+            <div class="jobs job-3">
+                <h3>Web Scrapping</h3>
+                <h6>Gather you desired information</h6>
+                <p>
+                    Using NodeJS to scrap a website and downloading required data
+                </p>
+            </div>
+        </div>
+
+    </main>
+    <footer id="main-footer">
+        Copyright &copy;
+        <span id="year" class="text-secondry"></span>
+    </footer>
+</body>
+<script src="js/main.js"></script>
+<script>
+    $(document).ready(function () {
+
+        let currentYear = (new Date).getFullYear();
+        $('#year').text(currentYear);
+    })
+</script>
+
+</html>
